@@ -1,0 +1,84 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 1.6rem;
+}
+
+:root {
+    --color-primary: #ecf2f7;
+    --color-secondary: #e17171;
+    --color-dark-secondary: #d86767;
+}
+
+.layout {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary);
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout__main {
+    min-width: 90rem;
+}
+
+.main__title {
+    font-size: 2.2rem;
+    color: var(--color-secondary);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.main__prices {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.prices__price {
+    flex-basis: 33%;
+    background-color: white;
+    padding: 4rem;
+    text-align: center;
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.prices__price:last-child {
+    border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.prices__price--main {
+    transform: scale(1.1);
+    background-color: var(--color-secondary);
+    border-radius: 1.5rem;
+}
+
+.prices__price--main .price__number,
+.prices__price--main .price__subtitle,
+.prices__price--main .price__detail {
+    color: white;
+}
+
+.price__detail {
+    border-color: var(--color-dark-secondary);
+}
+
+.price__btn {
+    color: var(--color-secondary);
+    background-color: white;
+    border: 1px solid transparent;
+    transition: all 300ms linear;
+}
+
+.price__btn:hover {
+    color: white;
+    background-color: transparent;
+    border: 1px solid var(--color-dark-secondary);
+}
