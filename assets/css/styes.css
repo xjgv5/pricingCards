@@ -11,6 +11,8 @@ body {
     --color-primary: #ecf2f7;
     --color-secondary: #e17171;
     --color-dark-secondary: #d86767;
+    --color-text: #777aa2;
+    --color-price: #4f5166;
 }
 
 .layout {
@@ -78,7 +80,56 @@ body {
 }
 
 .price__btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.prices__price--main .price__btn {
+    background-color: white;
+    color: var(--color-secondary);
+}
+
+.prices__price--main .price__btn:hover {
     color: white;
     background-color: transparent;
-    border: 1px solid var(--color-dark-secondary);
+    border: 1px solid var(--color-primary);
+}
+
+.price__subtitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.price__number {
+    font-size: 4.2rem;
+    margin-bottom: 2rem;
+    color: var(--color-price);
+}
+
+.price__detail {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-text);
+    padding: 1rem 0;
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+}
+
+.price__detail:nth-child(4) {
+    border: none;
+}
+
+.price__btn {
+    width: 100%;
+    margin-top: 3rem;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color-secondary);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
 }
